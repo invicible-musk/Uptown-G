@@ -91,6 +91,15 @@
                             <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Jan-2045</small>
                             <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
                             <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                            <script>
+                                            // Get today's date
+                                            const today = new Date();
+                                            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+                                            const formattedDate = today.toLocaleDateString('en-GB', options); // Example: 02-Mar-2025
+                                        
+                                            // Display date inside the span
+                                            document.getElementById("currentDate").innerHTML = formattedDate;
+                                        </script>
                         </div>
                         <p>
                             Reliable high-speed internet solutions tailored for homes, businesses, and educational institutions with 24/7 support.
